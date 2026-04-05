@@ -3,9 +3,10 @@
 <package format="3">
   <name>group2_gp1</name>
   <version>0.0.0</version>
-  <description>TODO: Package description</description>
+  <description>ROS 2 sensor fusion pipeline for ENPM605 Group 2 GP1</description>
   <maintainer email="maxz@todo.todo">maxz</maintainer>
-  <license>TODO: License declaration</license>
+  <maintainer email="gfacchet@terpmail.umd.edu">namfacchetti</maintainer>
+  <license>Apache-2.0</license>
 
   <depend>rclpy</depend>
   <depend>std_msgs</depend>

@@ -13,10 +13,10 @@ setup(
     ],
     install_requires=['setuptools'],
     zip_safe=True,
-    maintainer='maxz',
-    maintainer_email='maxz@todo.todo',
-    description='TODO: Package description',
-    license='TODO: License declaration',
+    maintainer='maxz , namfacchetti',
+    maintainer_email='maxz@todo.todo, gfacchet@terpmail.umd.edu',
+    description='ROS 2 sensor fusion pipeline for ENPM605 Group 2 GP1',
+    license='Apache-2.0',
     extras_require={
         'test': [
             'pytest',
@@ -24,6 +24,7 @@ setup(
     },
     entry_points={
         'console_scripts': [
+           'camera_node = scripts.main_camera_node:main',
         ],
     },
 )
