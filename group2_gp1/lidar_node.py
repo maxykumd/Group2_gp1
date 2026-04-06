@@ -1,6 +1,6 @@
 # Name: Yossaphat Kulvatunyou
 # UID: 112362550
-# Module: lidar_node.py - Scenario 3 Camera Node
+# Module: lidar_node.py - Scenario 3 Lidar Node
 
 from std_msgs.msg import Float64
 from rclpy.node import Node
