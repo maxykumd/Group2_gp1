@@ -24,6 +24,10 @@ setup(
     },
     entry_points={
         'console_scripts': [
+            'lidar_node = group2_gp1.scripts.run_lidar_node:main',
+            'publisher_demo = group2_gp1.scripts.run_publisher_demo:main',
+            'fusion_node = group2_gp1.scripts.run_fusion_node:main',
         ],
     },
 )
+# 'lidar_node = group2_gp1.lidar:main'
