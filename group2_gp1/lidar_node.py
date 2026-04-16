@@ -27,8 +27,6 @@ class LidarNode(Node):
             durability=DurabilityPolicy.VOLATILE
         )
 
-        self._counter = 0
-        self._message = Float64()
         self._publisher = self.create_publisher(Float64, "/sensors/lidar", lidar_qos) #msg_type: Any,topic: str, qos_profile: QoSProfile 
         self._timer = self.create_timer(0.2, self.publish_simulate_reading)
 
@@ -38,7 +36,7 @@ class LidarNode(Node):
         Timer callback that generates a random LiDAR distance reading
         and publishes it to the '/sensors/lidar' topic.
         """
+        self._message = Float64()
         self._message.data = random.uniform(0.5, 50.0)
         self._publisher.publish(self._message)
         self.get_logger().info(f"Lidar Distance: {self._message.data:.2f} m")
-        self._counter += 1
